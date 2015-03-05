@@ -6,11 +6,11 @@ require 'caesar/version'
 Gem::Specification.new do |spec|
   spec.name          = "caesar"
   spec.version       = Caesar::VERSION
-  spec.authors       = ["otamm"]
+  spec.authors       = ["Otávio Monteagudo"]
   spec.email         = ["oivatom@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Implementation of encipher and decipher functions of the Caesar/Shift cipher.}
+  spec.description   = %q{Easily implement a function to encipher or decipher a given message encrypted with either Caesar or Shift cipher. Deciphering relies on user input and a list of common words.}
+  spec.homepage      = "https://github.com/otamm/Caesar"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
