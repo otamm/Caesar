@@ -25,10 +25,23 @@ Or install it yourself as:
 
 ## Usage
 
+Enciphering:
 ```ruby
-
+CaesarCode.encipher("abcd")
+# => "DEFG"
+# By default, the encryption shifts each letter 3 times.
+CaesarCode.encipher("IBM",25)
+# => "HAL"
+# The encryption can also be made with an arbitrary number of shifts.
 ```
 
+Deciphering:
+```ruby
+CaesarCode.decipher("cf")
+# Will prompt the user asking if the message "BE" makes any sense (as "BE" is one of the most common words in English)
+CaesarCode.decipher("ifmmp IBM", "HAL")
+# Will prompt the user on the message "HELLO HAL", as "HAL" was added to the list of words to search for in the text.
+```
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/caesar/fork )
