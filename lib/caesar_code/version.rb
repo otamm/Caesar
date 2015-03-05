@@ -1,4 +1,4 @@
-module Caesar
+module CaesarCode
   VERSION = "0.0.1"
 end
 

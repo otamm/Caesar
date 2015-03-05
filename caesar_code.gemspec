@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'caesar/version'
+require 'caesar_code/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "caesar"
-  spec.version       = Caesar::VERSION
+  spec.name          = "caesar_code"
+  spec.version       = CaesarCode::VERSION
   spec.authors       = ["Otávio Monteagudo"]
   spec.email         = ["oivatom@gmail.com"]
   spec.summary       = %q{Implementation of encipher and decipher functions of the Caesar/Shift cipher.}
   spec.description   = %q{Easily implement a function to encipher or decipher a given message encrypted with either Caesar or Shift cipher. Deciphering relies on user input and a list of common words.}
-  spec.homepage      = "https://github.com/otamm/Caesar"
+  spec.homepage      = "https://github.com/otamm/caesar-code"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")

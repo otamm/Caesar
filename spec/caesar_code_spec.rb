@@ -1,16 +1,16 @@
 require 'spec_helper'
 
-describe Caesar do
+describe CaesarCode do
 
   describe '#encipher' do
 
     it 'enciphers with 3 shits by default' do
-      output = Caesar.encipher("IBM")
+      output = CaesarCode.encipher("IBM")
       expect(output).to eq "LEP"
     end
 
     it 'enciphers with an arbitrary number of shifts' do
-      output = Caesar.encipher("IBM",25)
+      output = CaesarCode.encipher("IBM",25)
       expect(output).to eq "HAL"
     end
 
@@ -32,6 +32,6 @@ describe Caesar do
     #  allow(Caesar.decipher("cf")).to receive(:answer) { positive }
     #  expect(deciphered).to eq "BE"
     #end
-  end
+  #end
 
 end

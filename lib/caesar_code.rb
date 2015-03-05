@@ -1,6 +1,6 @@
-require "caesar/version"
+require "caesar_code/version"
 
-module Caesar
+module CaesarCode
 
   @@alpha_nums =    {
     "A"=>1,
